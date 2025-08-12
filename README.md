@@ -10,10 +10,14 @@ There are 33+K rows and 23 features in this dataset, which was scraped between A
 
 ## Analysis
 The SQL table were created in MySQL Workbench, but the dataset did not import correctly the first time python pandas was used to explore and clean it. 
+<img width="1465" height="706" alt="Incorrect data import into MySQL" src="https://github.com/user-attachments/assets/a7f4c9a2-67ee-487d-b824-a2336c57fd3c" />
+
+
 The following modifications were made:
-  ✏️some of the data types in the SQL schema needed to be changed to accomodate the values in the set (VARCHAR to MEDIUMTEXT, INT to BIGINT, INT to DATETIME)
-  ✏️the original datetime values were in UNIX timestamps (epoch time) so were changed to datetime64(ns) to display it in proper datetime format (ISO strings)
-  ✏️the --description-- and --title-- columns contain very very long strings and it causes issues with importing, so the comma within these columns were replaced with space ("," to " ")
+✏️some of the data types in the SQL schema needed to be changed to accomodate the values in the set (VARCHAR to MEDIUMTEXT, INT to BIGINT, INT to DATETIME)
+✏️the original datetime values were in UNIX timestamps (epoch time) so were changed to datetime64(ns) to display it in proper datetime format (ISO strings)
+✏️the --description-- and --title-- columns contain very very long strings and it causes issues with importing, so the comma within these columns were replaced with space ("," to " ")
+<img width="453" height="127" alt="Long strings need MEDIUMTEXT data type in MySQL" src="https://github.com/user-attachments/assets/3218d3b5-eee0-44d2-bf65-19ba11c0f6ba" />
 
 
 ## Filtering
@@ -23,6 +27,9 @@ The filesize of these filtered csv files reduced to 10kb each, which are much mo
 ## Visualisation
 The filtered dataset was then imported into PowerBI to generate an interactive dashboard. 
 The dashboard consists of a bar chart, a pie chart, a lineplot and a treemap.
+
+<img width="1067" height="584" alt="Insights into Data jobs LinkedIn 2023" src="https://github.com/user-attachments/assets/2fd83c16-8900-4c31-aef9-b3dd42145bad" />
+
 
 
 The same dataset was also visualised using [Tableau](https://public.tableau.com/views/datajobs_tableaudashboard/Dashboard1?:language=en-GB&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
