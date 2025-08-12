@@ -2,7 +2,7 @@
 Analysis and visualisation of a jobs dataset from 2023
 
 ## Aim
-To learn and showcase data visualisation with PowerBI
+To learn and showcase data visualisation with PowerBI and Tableau
 
 ## Data
 The dataset was downloaded from [here](https://huggingface.co/datasets/xanderios/linkedin-job-postings). Originally it is a 130+MB file, which in the end was reduced to a 10+kb csv file to be imported into PowerBI.
@@ -23,3 +23,6 @@ The filesize of these filtered csv files reduced to 10kb each, which are much mo
 ## Visualisation
 The filtered dataset was then imported into PowerBI to generate an interactive dashboard. 
 The dashboard consists of a bar chart, a pie chart, a lineplot and a treemap.
+
+
+The same dataset was also visualised using [Tableau](https://public.tableau.com/views/datajobs_tableaudashboard/Dashboard1?:language=en-GB&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
